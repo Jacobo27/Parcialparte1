@@ -4,6 +4,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TIENDA DEPORTIVA JEICH</title>
-
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    #product-list li img {
+      width: 150px; 
+      height: auto; 
+      margin-bottom: 10px; 
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <h1>TIENDA DEPORTIVA JEICH</h1>
+        <h2>APARTADO DE COMPRA</h2>
+      </header>
+      <main>
+        <section id="products">
+            <h2>Productos Disponibles</h2>
+            <ul id="product-list">
+              <!-- Ejemplo de productos con imágenes y precios -->
+              <li>
+                <img src="img/termo.jpeg" alt="Producto 1">
+                <p>Precio: $20,000</p>
+                <button onclick="addToWishlist('Producto 1')">Agregar a Lista de Deseos</button>
+              </li>
+              <li>
+                <img src="img/pantalon.jpeg" alt="Producto 2">
+                <p>Precio: $100,000</p>
+                <button onclick="addToWishlist('Producto 2')">Agregar a Lista de Deseos</button>
+              </li>
+              <li>
+                <img src="img/proteina.jpeg" alt="Producto 3">
+                <p>Precio: $150,000</p>
+                <button onclick="addToWishlist('Producto 3')">Agregar a Lista de Deseos</button>
+              </li>
+            </ul>
+        </section>
+      </main>
+      <footer>
+        <p>&copy; 2024 TIENDA DEPORTIVA JEICH</p>
+      </footer>
+      <section id="wishlist">
+        <h2>Lista de Deseos</h2>
+        <a href="index.html">Volver a la Tienda</a>
+      </section>
+      <script src="app.js"></script>
+    
+      
 </body>
 </html>
